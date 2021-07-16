@@ -3,16 +3,28 @@
     <head>
         <title>Google Search</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+            .googButton
+            {
+                background-color: #f8f9fa; 
+                color: #3c4043;
+            }
+        </style>
     </head>
     <body>
-        <form input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example" action="https://google.com/search">
-            <div style="text-align: center"><input type="text" name="q"></div>
-            <div style="text-align: center">
-            <input type="submit" value="Google Search">
-            <input type="submit" name="btnI" value="I'm Feeling Lucky">
+        <div style="text-align: right; padding-top: 0.75rem;">
+        <button class="form-label" onclick="location.href='advanced.html'">Advanced</button>
+        <button class="form-label" onclick="location.href='images.html'">Images</button>
+        </div>
+        <div style="text-align: center" class="no-gutters">
+        <img src="/web/project%200/images/googlogo.jpg">
+        <form class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example" action="https://google.com/search">
+            <input type="text" name="q">
+            <div>
+            <input class="form-label" type="submit" value="Google Search">
+            <input class="form-label" type="submit" name="btnI" value="I'm Feeling Lucky">
             </div>
         </form>
-        <button onclick="location.href='advanced.html'">Advanced</button>
-        <button onclick="location.href='images.html'">Images</button>
+        </div>
     </body>
 </html>
