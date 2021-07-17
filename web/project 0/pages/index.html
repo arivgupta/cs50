@@ -9,20 +9,23 @@
                 background-color: #f8f9fa; 
                 color: #3c4043;
             }
+            .form-control {
+                border: 0;
+            }
         </style>
     </head>
     <body>
-        <div style="text-align: right; padding-top: 0.75rem;">
-        <button class="form-label" onclick="location.href='advanced.html'">Advanced</button>
-        <button class="form-label" onclick="location.href='images.html'">Images</button>
+        <div style="text-align: right; padding-top: 0.75rem; padding-right: 0.5rem;">
+        <button class="btn" onclick="location.href='advanced.html'">Advanced</button>
+        <button class="btn" onclick="location.href='images.html'">Images</button>
         </div>
-        <div style="text-align: center" class="no-gutters">
-        <img src="/web/project%200/images/googlogo.jpg">
+        <div style="text-align: center;">
+        <img src="/web/project%200/images/googlogo.png" class="img-fluid" style="padding-top: 0.5rem;">
         <form class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example" action="https://google.com/search">
             <input type="text" name="q">
-            <div>
-            <input class="form-label" type="submit" value="Google Search">
-            <input class="form-label" type="submit" name="btnI" value="I'm Feeling Lucky">
+            <div style="padding-top: 0.5rem;">
+            <input class="btn" style="background-color: rgba(128, 128, 128, 0.048);" type="submit" value="Google Search">
+            <input class="btn" style="background-color: rgba(128, 128, 128, 0.048);" type="submit" name="btnI" value="I'm Feeling Lucky">
             </div>
         </form>
         </div>
